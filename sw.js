@@ -67,7 +67,7 @@ if (!self.define) {
     });
   };
 }
-define(['./workbox-86c9b217'], (function (workbox) { 'use strict';
+define(['./workbox-ab7aa862'], (function (workbox) { 'use strict';
 
   self.skipWaiting();
   workbox.clientsClaim();
@@ -79,172 +79,184 @@ define(['./workbox-86c9b217'], (function (workbox) { 'use strict';
    */
   workbox.precacheAndRoute([{
     "url": "404.html",
-    "revision": "b74b59d248b3f3a7fd444a12c83c65ed"
+    "revision": "c96b6fba8f097d7c99d3cba167c7674b"
   }, {
     "url": "api/QrcodeCapture.html",
-    "revision": "6639ae0a1a8daf0a51d027962cb0ae8a"
+    "revision": "f526877fb1572f3ad4da14021364d6cd"
   }, {
     "url": "api/QrcodeDropZone.html",
-    "revision": "c308ec7bf5267aeb3a91fd209ebe636b"
+    "revision": "cb7a36ba1d1e15881b94d028ef3ae95f"
   }, {
     "url": "api/QrcodeStream.html",
-    "revision": "582fd730ce93fc4a583cddc82267b090"
+    "revision": "5a726b63b8f82269a644c2d09b2a587c"
   }, {
-    "url": "assets/api_QrcodeCapture.md.B5QU-yV0.js",
+    "url": "assets/api_QrcodeCapture.md.df55ae48.js",
     "revision": null
   }, {
-    "url": "assets/api_QrcodeCapture.md.B5QU-yV0.lean.js",
+    "url": "assets/api_QrcodeCapture.md.df55ae48.lean.js",
     "revision": null
   }, {
-    "url": "assets/api_QrcodeDropZone.md.DcShioG4.js",
+    "url": "assets/api_QrcodeDropZone.md.8ad7c868.js",
     "revision": null
   }, {
-    "url": "assets/api_QrcodeDropZone.md.DcShioG4.lean.js",
+    "url": "assets/api_QrcodeDropZone.md.8ad7c868.lean.js",
     "revision": null
   }, {
-    "url": "assets/api_QrcodeStream.md.9CJzVv4z.js",
+    "url": "assets/api_QrcodeStream.md.186f766e.js",
     "revision": null
   }, {
-    "url": "assets/api_QrcodeStream.md.9CJzVv4z.lean.js",
+    "url": "assets/api_QrcodeStream.md.186f766e.lean.js",
     "revision": null
   }, {
-    "url": "assets/app.4MlHmAg2.js",
+    "url": "assets/app.d491afe8.js",
     "revision": null
   }, {
-    "url": "assets/chunks/@localSearchIndexroot.BiSJWzvQ.js",
+    "url": "assets/chunks/@localSearchIndexroot.d276a456.js",
     "revision": null
   }, {
-    "url": "assets/chunks/camera.G18_pu39.js",
+    "url": "assets/chunks/framework.ffe7611b.js",
     "revision": null
   }, {
-    "url": "assets/chunks/framework.BZTtPEZj.js",
+    "url": "assets/chunks/index.cf60a0d7.js",
     "revision": null
   }, {
-    "url": "assets/chunks/QrcodeStream.vue_vue_type_script_setup_true_lang.CHykGdh_.js",
+    "url": "assets/chunks/safari_32x32.e02d9c5e.js",
     "revision": null
   }, {
-    "url": "assets/chunks/safari_32x32.Bkuv9jEj.js",
+    "url": "assets/chunks/theme.15164788.js",
     "revision": null
   }, {
-    "url": "assets/chunks/theme.TxNFPanC.js",
+    "url": "assets/chunks/VPLocalSearchBox.a4cdc53a.js",
     "revision": null
   }, {
-    "url": "assets/chunks/VPLocalSearchBox.DUe8aDgT.js",
+    "url": "assets/demos_CustomTracking.md.10ef0fa6.js",
     "revision": null
   }, {
-    "url": "assets/demos_DragDrop.md.BtW0kG8T.js",
+    "url": "assets/demos_CustomTracking.md.10ef0fa6.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_DragDrop.md.BtW0kG8T.lean.js",
+    "url": "assets/demos_CustomTrackingWithFormats.md.43b2d24e.js",
     "revision": null
   }, {
-    "url": "assets/demos_FullDemo.md.DKjhHndD.js",
+    "url": "assets/demos_CustomTrackingWithFormats.md.43b2d24e.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_FullDemo.md.DKjhHndD.lean.js",
+    "url": "assets/demos_DeviceId.md.6303f8c9.js",
     "revision": null
   }, {
-    "url": "assets/demos_Fullscreen.md.DED6G_j1.js",
+    "url": "assets/demos_DeviceId.md.6303f8c9.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_Fullscreen.md.DED6G_j1.lean.js",
+    "url": "assets/demos_DragDrop.md.0842cac3.js",
     "revision": null
   }, {
-    "url": "assets/demos_LoadingIndicator.md.CO1FFjPb.js",
+    "url": "assets/demos_DragDrop.md.0842cac3.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_LoadingIndicator.md.CO1FFjPb.lean.js",
+    "url": "assets/demos_Fullscreen.md.eed9dfc2.js",
     "revision": null
   }, {
-    "url": "assets/demos_ScanSameQrcodeMoreThanOnce.md.BLMMumUu.js",
+    "url": "assets/demos_Fullscreen.md.eed9dfc2.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_ScanSameQrcodeMoreThanOnce.md.BLMMumUu.lean.js",
+    "url": "assets/demos_HandleErrors.md.17445f0b.js",
     "revision": null
   }, {
-    "url": "assets/demos_Simple.md.pOZZvrwC.js",
+    "url": "assets/demos_HandleErrors.md.17445f0b.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_Simple.md.pOZZvrwC.lean.js",
+    "url": "assets/demos_LoadingIndicator.md.8724aa68.js",
     "revision": null
   }, {
-    "url": "assets/demos_SwitchCamera.md.CSsbqGtI.js",
+    "url": "assets/demos_LoadingIndicator.md.8724aa68.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_SwitchCamera.md.CSsbqGtI.lean.js",
+    "url": "assets/demos_ScanSameQrcodeMoreThanOnce.md.a89f6787.js",
     "revision": null
   }, {
-    "url": "assets/demos_Torch.md.Cvr7XDCv.js",
+    "url": "assets/demos_ScanSameQrcodeMoreThanOnce.md.a89f6787.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_Torch.md.Cvr7XDCv.lean.js",
+    "url": "assets/demos_Simple.md.bdf2f190.js",
     "revision": null
   }, {
-    "url": "assets/demos_Upload.md.GtJLLTJq.js",
+    "url": "assets/demos_Simple.md.bdf2f190.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_Upload.md.GtJLLTJq.lean.js",
+    "url": "assets/demos_SwitchCamera.md.78b8df54.js",
     "revision": null
   }, {
-    "url": "assets/demos_Validate.md.e3yinIpP.js",
+    "url": "assets/demos_SwitchCamera.md.78b8df54.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_Validate.md.e3yinIpP.lean.js",
+    "url": "assets/demos_Torch.md.40a3fe4e.js",
     "revision": null
   }, {
-    "url": "assets/index.md.BaqeBjf0.js",
+    "url": "assets/demos_Torch.md.40a3fe4e.lean.js",
     "revision": null
   }, {
-    "url": "assets/index.md.BaqeBjf0.lean.js",
+    "url": "assets/demos_Upload.md.dd63426d.js",
     "revision": null
   }, {
-    "url": "assets/inter-italic-cyrillic-ext.5XJwZIOp.woff2",
+    "url": "assets/demos_Upload.md.dd63426d.lean.js",
     "revision": null
   }, {
-    "url": "assets/inter-italic-cyrillic.D6csxwjC.woff2",
+    "url": "assets/demos_Validate.md.13f1d490.js",
     "revision": null
   }, {
-    "url": "assets/inter-italic-greek-ext.CHOfFY1k.woff2",
+    "url": "assets/demos_Validate.md.13f1d490.lean.js",
     "revision": null
   }, {
-    "url": "assets/inter-italic-greek.9J96vYpw.woff2",
+    "url": "assets/index.md.40bc9a5b.js",
     "revision": null
   }, {
-    "url": "assets/inter-italic-latin-ext.BGcWXLrn.woff2",
+    "url": "assets/index.md.40bc9a5b.lean.js",
     "revision": null
   }, {
-    "url": "assets/inter-italic-latin.DbsTr1gm.woff2",
+    "url": "assets/inter-italic-cyrillic-ext.33bd5a8e.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-italic-vietnamese.DHNAd7Wr.woff2",
+    "url": "assets/inter-italic-cyrillic.ea42a392.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-roman-cyrillic-ext.DxP3Awbn.woff2",
+    "url": "assets/inter-italic-greek-ext.4fbe9427.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-roman-cyrillic.CMhn1ESj.woff2",
+    "url": "assets/inter-italic-greek.8f4463c4.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-roman-greek-ext.D0mI3NpI.woff2",
+    "url": "assets/inter-italic-latin-ext.bd8920cc.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-roman-greek.JvnBZ4YD.woff2",
+    "url": "assets/inter-italic-latin.bd3b6f56.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-roman-latin-ext.ZlYT4o7i.woff2",
+    "url": "assets/inter-italic-vietnamese.6ce511fb.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-roman-latin.Bu8hRsVA.woff2",
+    "url": "assets/inter-roman-cyrillic-ext.e75737ce.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-roman-vietnamese.ClpjcLMQ.woff2",
+    "url": "assets/inter-roman-cyrillic.5f2c6c8c.woff2",
     "revision": null
   }, {
-    "url": "assets/style._o-JA5m5.css",
+    "url": "assets/inter-roman-greek-ext.ab0619bc.woff2",
     "revision": null
   }, {
-    "url": "barcode-detector-test.html",
-    "revision": "c6ab43ddd912cedd13ceae46427c275d"
+    "url": "assets/inter-roman-greek.d5a6d92a.woff2",
+    "revision": null
+  }, {
+    "url": "assets/inter-roman-latin-ext.0030eebd.woff2",
+    "revision": null
+  }, {
+    "url": "assets/inter-roman-latin.2ed14f66.woff2",
+    "revision": null
+  }, {
+    "url": "assets/inter-roman-vietnamese.14ce25a6.woff2",
+    "revision": null
+  }, {
+    "url": "assets/style.264577ca.css",
+    "revision": null
   }, {
     "url": "camera-switch.svg",
     "revision": "c966900237eef848d4aeb18b0ad64371"
@@ -255,35 +267,44 @@ define(['./workbox-86c9b217'], (function (workbox) { 'use strict';
     "url": "debug-memory-leak.html",
     "revision": "baffbefe1bde1d10f0c089b20f0cb9ed"
   }, {
-    "url": "demos/DragDrop.html",
-    "revision": "78719fa896c1334ef5e8988313af4b09"
+    "url": "demos/CustomTracking.html",
+    "revision": "a47d2eb221b454bbb81beefe97fcc316"
   }, {
-    "url": "demos/FullDemo.html",
-    "revision": "c9d13fb770f2adbdf3de954ff43cbf25"
+    "url": "demos/CustomTrackingWithFormats.html",
+    "revision": "57598890ab9bd61fe4f51f4ca57cca06"
+  }, {
+    "url": "demos/DeviceId.html",
+    "revision": "59e8ca47b23b5316a9ef3f4b586d5b39"
+  }, {
+    "url": "demos/DragDrop.html",
+    "revision": "5d702cb7ec1cf84582b79a16ba6e9b91"
   }, {
     "url": "demos/Fullscreen.html",
-    "revision": "96d988f3710a0bc233b0dd23f35c425d"
+    "revision": "326801dca7391fb5598055d662813048"
+  }, {
+    "url": "demos/HandleErrors.html",
+    "revision": "f7e0ab217c3094e2c62178d5a3783f4c"
   }, {
     "url": "demos/LoadingIndicator.html",
-    "revision": "774ef66c6dbdf62edc8c4941fc9c2afe"
+    "revision": "854b5cbf6ccb14161acb4e8c102fc556"
   }, {
     "url": "demos/ScanSameQrcodeMoreThanOnce.html",
-    "revision": "816d5a966a40e0c47c79a7d7565b1eae"
+    "revision": "e091415e0c7e1f6d4576ad2fa86f93c8"
   }, {
     "url": "demos/Simple.html",
-    "revision": "4b7a40f7efaf1325333d44734eeb352f"
+    "revision": "75cf368d87445bf1c49d709271e52c19"
   }, {
     "url": "demos/SwitchCamera.html",
-    "revision": "149a1d5b462aa4558123ec10c00dcd39"
+    "revision": "db29873a911bbf4a0f3774b651435b72"
   }, {
     "url": "demos/Torch.html",
-    "revision": "5a4251bbc95418bdc2092da2e27f384d"
+    "revision": "aa49d7ff859aed20dbf39acaa1bf2bf0"
   }, {
     "url": "demos/Upload.html",
-    "revision": "ff34910141f1910bbe64dfa6a97b4715"
+    "revision": "062576b71e06eb46a036e29d5e039f24"
   }, {
     "url": "demos/Validate.html",
-    "revision": "a4046345d8050d7d034188e6b1d01480"
+    "revision": "41bfcad90a11230f5839a78196b2002a"
   }, {
     "url": "flash-off.svg",
     "revision": "8b05f5dcd6712992a544b34520ec7262"
@@ -298,7 +319,7 @@ define(['./workbox-86c9b217'], (function (workbox) { 'use strict';
     "revision": "432c44f09de0b4e0f9e236fad9b8c7f9"
   }, {
     "url": "index.html",
-    "revision": "359183b4d59528bfff13e681a6387a02"
+    "revision": "aa08aaf358f3de23189de16f7927e52e"
   }, {
     "url": "logo.png",
     "revision": "5f0c1d6358641bc48207acb9fa0b6182"
@@ -310,13 +331,10 @@ define(['./workbox-86c9b217'], (function (workbox) { 'use strict';
     "revision": "5e0a4893ebdd02af95cf73c7b7759ddd"
   }, {
     "url": "registerSW.js",
-    "revision": "2acda7f8afc7fc2d992b71c201491acd"
+    "revision": "1872c500de691dce40960bb85481de07"
   }, {
     "url": "select-camera-demo.html",
-    "revision": "caa12e13f97000bc06e565e64bb8bd0f"
-  }, {
-    "url": "simple-demo.html",
-    "revision": "d2e0337bc830c36ac24089933500e897"
+    "revision": "7317a2464378a9402a9a1051fcab6280"
   }, {
     "url": "pwa-192x192.png",
     "revision": "05431c417219f6c247a23488366a2b41"
@@ -325,7 +343,7 @@ define(['./workbox-86c9b217'], (function (workbox) { 'use strict';
     "revision": "5e0a4893ebdd02af95cf73c7b7759ddd"
   }, {
     "url": "manifest.webmanifest",
-    "revision": "e40b1de2aafd101d16ea152bd4d3e544"
+    "revision": "8220604414985a41ead8e83180fa1c1c"
   }], {});
   workbox.cleanupOutdatedCaches();
   workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("index.html")));
