@@ -79,186 +79,183 @@ define(['./workbox-ab7aa862'], (function (workbox) { 'use strict';
    */
   workbox.precacheAndRoute([{
     "url": "404.html",
-    "revision": "e1302df539a1cae24eb4ce4b3279fa4f"
+    "revision": "6ca0edb250b276b737b0f62cd93ed0f2"
   }, {
     "url": "api/QrcodeCapture.html",
-    "revision": "69dda82f6ea1c494de462bebe47a81e3"
+    "revision": "c076a77f4bac65457cf81a3363836bdf"
   }, {
     "url": "api/QrcodeDropZone.html",
-    "revision": "d62010527c3e9c71d932872d0f856d1b"
+    "revision": "c867aea48ee4315043514c8c950ed5c9"
   }, {
     "url": "api/QrcodeStream.html",
-    "revision": "bab1ae40c659f4e73aba90b59e5d20b9"
+    "revision": "342877c71182e8be3616ff38fa2c0233"
   }, {
-    "url": "assets/api_QrcodeCapture.md.iwH53kMe.js",
+    "url": "assets/api_QrcodeCapture.md.0e392115.js",
     "revision": null
   }, {
-    "url": "assets/api_QrcodeCapture.md.iwH53kMe.lean.js",
+    "url": "assets/api_QrcodeCapture.md.0e392115.lean.js",
     "revision": null
   }, {
-    "url": "assets/api_QrcodeDropZone.md.x3vJz86C.js",
+    "url": "assets/api_QrcodeDropZone.md.0bd1f7d7.js",
     "revision": null
   }, {
-    "url": "assets/api_QrcodeDropZone.md.x3vJz86C.lean.js",
+    "url": "assets/api_QrcodeDropZone.md.0bd1f7d7.lean.js",
     "revision": null
   }, {
-    "url": "assets/api_QrcodeStream.md.0yd6rbui.js",
+    "url": "assets/api_QrcodeStream.md.6d49627e.js",
     "revision": null
   }, {
-    "url": "assets/api_QrcodeStream.md.0yd6rbui.lean.js",
+    "url": "assets/api_QrcodeStream.md.6d49627e.lean.js",
     "revision": null
   }, {
-    "url": "assets/app.q1G5vEUp.js",
+    "url": "assets/app.fbece594.js",
     "revision": null
   }, {
-    "url": "assets/chunks/@localSearchIndexroot.nwL2Oa1e.js",
+    "url": "assets/chunks/@localSearchIndexroot.2dd1751a.js",
     "revision": null
   }, {
-    "url": "assets/chunks/camera.jRlxdp9g.js",
+    "url": "assets/chunks/framework.9a6548f5.js",
     "revision": null
   }, {
-    "url": "assets/chunks/framework.KXtzUc-v.js",
+    "url": "assets/chunks/index.90c5ebaf.js",
     "revision": null
   }, {
-    "url": "assets/chunks/QrcodeStream.vue_vue_type_script_setup_true_lang.ZK9ZA_-L.js",
+    "url": "assets/chunks/safari_32x32.e02d9c5e.js",
     "revision": null
   }, {
-    "url": "assets/chunks/safari_32x32.yJUh4Fxj.js",
+    "url": "assets/chunks/theme.dce4eb2d.js",
     "revision": null
   }, {
-    "url": "assets/chunks/theme.TyEYLWuV.js",
+    "url": "assets/chunks/VPLocalSearchBox.8ea41b7b.js",
     "revision": null
   }, {
-    "url": "assets/chunks/VPLocalSearchBox._g8MWMQs.js",
+    "url": "assets/demos_CustomTracking.md.f6a40222.js",
     "revision": null
   }, {
-    "url": "assets/demos_CustomTracking.md.0ZllG1Il.js",
+    "url": "assets/demos_CustomTracking.md.f6a40222.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_CustomTracking.md.0ZllG1Il.lean.js",
+    "url": "assets/demos_CustomTrackingWithFormats.md.ccb1c598.js",
     "revision": null
   }, {
-    "url": "assets/demos_CustomTrackingWithFormats.md.Sr6AISz2.js",
+    "url": "assets/demos_CustomTrackingWithFormats.md.ccb1c598.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_CustomTrackingWithFormats.md.Sr6AISz2.lean.js",
+    "url": "assets/demos_DeviceId.md.7f6bd1d1.js",
     "revision": null
   }, {
-    "url": "assets/demos_DeviceId.md.iwg-lMtB.js",
+    "url": "assets/demos_DeviceId.md.7f6bd1d1.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_DeviceId.md.iwg-lMtB.lean.js",
+    "url": "assets/demos_DragDrop.md.8e8ea295.js",
     "revision": null
   }, {
-    "url": "assets/demos_DragDrop.md.QOt6WJCP.js",
+    "url": "assets/demos_DragDrop.md.8e8ea295.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_DragDrop.md.QOt6WJCP.lean.js",
+    "url": "assets/demos_Fullscreen.md.527e0c25.js",
     "revision": null
   }, {
-    "url": "assets/demos_Fullscreen.md.K3uFnkNB.js",
+    "url": "assets/demos_Fullscreen.md.527e0c25.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_Fullscreen.md.K3uFnkNB.lean.js",
+    "url": "assets/demos_HandleErrors.md.b3a2a941.js",
     "revision": null
   }, {
-    "url": "assets/demos_HandleErrors.md.klW8xR1r.js",
+    "url": "assets/demos_HandleErrors.md.b3a2a941.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_HandleErrors.md.klW8xR1r.lean.js",
+    "url": "assets/demos_LoadingIndicator.md.759e2fb3.js",
     "revision": null
   }, {
-    "url": "assets/demos_LoadingIndicator.md.9eiRM12p.js",
+    "url": "assets/demos_LoadingIndicator.md.759e2fb3.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_LoadingIndicator.md.9eiRM12p.lean.js",
+    "url": "assets/demos_ScanSameQrcodeMoreThanOnce.md.b0b9e218.js",
     "revision": null
   }, {
-    "url": "assets/demos_ScanSameQrcodeMoreThanOnce.md.vbTVNOAp.js",
+    "url": "assets/demos_ScanSameQrcodeMoreThanOnce.md.b0b9e218.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_ScanSameQrcodeMoreThanOnce.md.vbTVNOAp.lean.js",
+    "url": "assets/demos_Simple.md.bddf6668.js",
     "revision": null
   }, {
-    "url": "assets/demos_Simple.md.uL9gPjw1.js",
+    "url": "assets/demos_Simple.md.bddf6668.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_Simple.md.uL9gPjw1.lean.js",
+    "url": "assets/demos_SwitchCamera.md.e6c90a22.js",
     "revision": null
   }, {
-    "url": "assets/demos_SwitchCamera.md.jJhgBuiv.js",
+    "url": "assets/demos_SwitchCamera.md.e6c90a22.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_SwitchCamera.md.jJhgBuiv.lean.js",
+    "url": "assets/demos_Torch.md.d483b851.js",
     "revision": null
   }, {
-    "url": "assets/demos_Torch.md.5fMpk4XO.js",
+    "url": "assets/demos_Torch.md.d483b851.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_Torch.md.5fMpk4XO.lean.js",
+    "url": "assets/demos_Upload.md.ff716424.js",
     "revision": null
   }, {
-    "url": "assets/demos_Upload.md._UBcAWcQ.js",
+    "url": "assets/demos_Upload.md.ff716424.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_Upload.md._UBcAWcQ.lean.js",
+    "url": "assets/demos_Validate.md.e642f0fd.js",
     "revision": null
   }, {
-    "url": "assets/demos_Validate.md.yFXS2yXA.js",
+    "url": "assets/demos_Validate.md.e642f0fd.lean.js",
     "revision": null
   }, {
-    "url": "assets/demos_Validate.md.yFXS2yXA.lean.js",
+    "url": "assets/index.md.dd642809.js",
     "revision": null
   }, {
-    "url": "assets/index.md.UpZ6T0we.js",
+    "url": "assets/index.md.dd642809.lean.js",
     "revision": null
   }, {
-    "url": "assets/index.md.UpZ6T0we.lean.js",
+    "url": "assets/inter-italic-cyrillic-ext.33bd5a8e.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-italic-cyrillic-ext.OVycGSDq.woff2",
+    "url": "assets/inter-italic-cyrillic.ea42a392.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-italic-cyrillic.-nLMcIwj.woff2",
+    "url": "assets/inter-italic-greek-ext.4fbe9427.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-italic-greek-ext.hznxWNZO.woff2",
+    "url": "assets/inter-italic-greek.8f4463c4.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-italic-greek.PSfer2Kc.woff2",
+    "url": "assets/inter-italic-latin-ext.bd8920cc.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-italic-latin-ext.RnFly65-.woff2",
+    "url": "assets/inter-italic-latin.bd3b6f56.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-italic-latin.27E69YJn.woff2",
+    "url": "assets/inter-italic-vietnamese.6ce511fb.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-italic-vietnamese.xzQHe1q1.woff2",
+    "url": "assets/inter-roman-cyrillic-ext.e75737ce.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-roman-cyrillic-ext.8T9wMG5w.woff2",
+    "url": "assets/inter-roman-cyrillic.5f2c6c8c.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-roman-cyrillic.jIZ9REo5.woff2",
+    "url": "assets/inter-roman-greek-ext.ab0619bc.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-roman-greek-ext.9JiNzaSO.woff2",
+    "url": "assets/inter-roman-greek.d5a6d92a.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-roman-greek.Cb5wWeGA.woff2",
+    "url": "assets/inter-roman-latin-ext.0030eebd.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-roman-latin-ext.GZWE-KO4.woff2",
+    "url": "assets/inter-roman-latin.2ed14f66.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-roman-latin.bvIUbFQP.woff2",
+    "url": "assets/inter-roman-vietnamese.14ce25a6.woff2",
     "revision": null
   }, {
-    "url": "assets/inter-roman-vietnamese.paY3CzEB.woff2",
-    "revision": null
-  }, {
-    "url": "assets/style.BcCF0g33.css",
+    "url": "assets/style.ac1366dc.css",
     "revision": null
   }, {
     "url": "camera-switch.svg",
@@ -271,43 +268,43 @@ define(['./workbox-ab7aa862'], (function (workbox) { 'use strict';
     "revision": "baffbefe1bde1d10f0c089b20f0cb9ed"
   }, {
     "url": "demos/CustomTracking.html",
-    "revision": "f8bf1a7b4c6d346b540e325ceb09e103"
+    "revision": "6b8b6a34d76bc120c9d80e793148d2e4"
   }, {
     "url": "demos/CustomTrackingWithFormats.html",
-    "revision": "d98d35a54bb705095324fedad5bd8295"
+    "revision": "ea7d0d4d2dd7bc7bb315741990055aa1"
   }, {
     "url": "demos/DeviceId.html",
-    "revision": "fbc1be31db793bab819c0876fe1b6ec2"
+    "revision": "072692e07284951ae4fe7746899af681"
   }, {
     "url": "demos/DragDrop.html",
-    "revision": "d8169a111de7a9e11db9bc534318035d"
+    "revision": "dbef731971a194c1e3eeb324ef5d543a"
   }, {
     "url": "demos/Fullscreen.html",
-    "revision": "68e2b643c405b258a89434f79a911967"
+    "revision": "8cc44daa9d59e767e6d8fbf21fba742f"
   }, {
     "url": "demos/HandleErrors.html",
-    "revision": "fdc8bca1866930a2c5795262aaec9085"
+    "revision": "7d43ec5d4eb63f0d6082413b8af578cd"
   }, {
     "url": "demos/LoadingIndicator.html",
-    "revision": "a5b61cf044b5eb46c9f2789ae31fb285"
+    "revision": "358bb51a46a9c127bbf95a9a232a9e61"
   }, {
     "url": "demos/ScanSameQrcodeMoreThanOnce.html",
-    "revision": "a8a6103b82f91864ac73b2ff3c0878c6"
+    "revision": "207f58738ef9ca1e8fc1530f8ad35041"
   }, {
     "url": "demos/Simple.html",
-    "revision": "1272e41728e16ce4b9b3bce3648c5960"
+    "revision": "55a1582fa5a01f90d2a83175c74b03a2"
   }, {
     "url": "demos/SwitchCamera.html",
-    "revision": "161a87428f6c7c3c1603b7d6b051e3a4"
+    "revision": "2ce5905f58fac467f34633ca9e6f61a7"
   }, {
     "url": "demos/Torch.html",
-    "revision": "d7bc132d68148cc737b30bf93eab31f3"
+    "revision": "e319243e2a657a12300fafc11392c204"
   }, {
     "url": "demos/Upload.html",
-    "revision": "16a635081505883c1ce1a01ad1fe19df"
+    "revision": "e2dd45f92d8873aa55175d2bc933fef5"
   }, {
     "url": "demos/Validate.html",
-    "revision": "25bcd040905dba73dca4a97fe4fcddb0"
+    "revision": "69298e9f3acda6d265ac162c770466b0"
   }, {
     "url": "flash-off.svg",
     "revision": "8b05f5dcd6712992a544b34520ec7262"
@@ -322,7 +319,7 @@ define(['./workbox-ab7aa862'], (function (workbox) { 'use strict';
     "revision": "432c44f09de0b4e0f9e236fad9b8c7f9"
   }, {
     "url": "index.html",
-    "revision": "f000061f4a1cb414f08bcc246c5c6485"
+    "revision": "811de025a44e3128f599cbf30e58668c"
   }, {
     "url": "logo.png",
     "revision": "5f0c1d6358641bc48207acb9fa0b6182"
@@ -337,10 +334,7 @@ define(['./workbox-ab7aa862'], (function (workbox) { 'use strict';
     "revision": "2acda7f8afc7fc2d992b71c201491acd"
   }, {
     "url": "select-camera-demo.html",
-    "revision": "caa12e13f97000bc06e565e64bb8bd0f"
-  }, {
-    "url": "simple-demo.html",
-    "revision": "d2e0337bc830c36ac24089933500e897"
+    "revision": "7317a2464378a9402a9a1051fcab6280"
   }, {
     "url": "pwa-192x192.png",
     "revision": "05431c417219f6c247a23488366a2b41"
