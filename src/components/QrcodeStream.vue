@@ -30,7 +30,7 @@
 
 <script>
 import { keepScanning } from "../misc/scanner.js";
-import Camera from "../misc/camera.js";
+import * as cameraController from '../misc/camera'
 import CommonAPI from "../mixins/CommonAPI.vue";
 
 export default {
@@ -39,20 +39,20 @@ export default {
   mixins: [CommonAPI],
 
   props: {
-    camera: {
-      type: String,
-      default: "auto",
-
-      validator(camera) {
-        return ["auto", "rear", "front", "off"].includes(camera);
+    constraints: {
+      type: Object,
+      default() {
+        return { facingMode: 'environment' };
       }
     },
-
+    paused: {
+      type: Boolean,
+      default: false
+    },
     torch: {
       type: Boolean,
       default: false
     },
-
     track: {
       type: Function
     }
@@ -60,45 +60,47 @@ export default {
 
   data() {
     return {
-      cameraInstance: null,
-      destroyed: false
+      cameraActive: false,
+      isMounted: false,
+      pauseFrameRef: null,
+      trackingLayerRef: null,
+      videoRef: null
     };
   },
 
   computed: {
-    shouldStream() {
-      return this.destroyed === false && this.camera !== "off";
+    cameraSettings() {
+      return {
+        torch: this.torch,
+        constraints: this.constraints,
+        shouldStream: this.isMounted && !this.paused
+      };
     },
 
     shouldScan() {
-      return this.shouldStream === true && this.cameraInstance !== null;
-    },
-
-    /**
-     * Minimum delay in milliseconds between frames to be scanned. Don't scan
-     * so often when visual tracking is disabled to improve performance.
-     */
-    scanInterval() {
-      if (this.track === undefined) {
-        return 500;
-      } else {
-        return 40; // ~ 25fps
-      }
+      return this.cameraSettings.shouldStream && this.cameraActive;
     }
   },
 
+    mounted() {
+    this.isMounted = true;
+  },
+
   watch: {
-    shouldStream(shouldStream) {
-      if (!shouldStream) {
-        const canvas = this.$refs.pauseFrame;
-        const ctx = canvas.getContext("2d");
-        const video = this.$refs.video;
+    
+    cameraSettings: {
+      handler(cameraSettings) {
+        if (cameraSettings.shouldStream) {
+        this.videoRef = this.$refs.video;
+        this.pauseFrameRef = this.$refs.pauseFrame;
+        this.trackingLayerRef = this.$refs.trackingLayer;
 
-        canvas.width = video.videoWidth;
-        canvas.height = video.videoHeight;
-
-        ctx.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
-      }
+        this.startCamera();
+        } else {
+          this.stopCamera();
+        }
+      },
+      deep: true
     },
 
     shouldScan(shouldScan) {
@@ -108,61 +110,48 @@ export default {
         this.startScanning();
       }
     },
-
-    torch() {
-      this.init();
-    },
-
-    camera() {
-      this.init();
-    }
-  },
-
-  mounted() {
-    this.init();
   },
 
   beforeDestroy() {
-    this.beforeResetCamera();
-    this.destroyed = true;
+    cameraController.stop();
   },
 
   methods: {
-    init() {
-      const promise = (async () => {
-        this.beforeResetCamera();
+ 
 
-        if (this.camera === "off") {
-          this.cameraInstance = null;
-
-          return {
-            capabilities: {}
-          };
-        } else {
-          this.cameraInstance = await Camera(this.$refs.video, {
-            camera: this.camera,
-            torch: this.torch
-          });
-
-          const capabilities = this.cameraInstance.getCapabilities();
-
-          // if the component is destroyed before `cameraInstance` resolves a
-          // `beforeDestroy` hook has no chance to clear the remaining camera
-          // stream.
-          if (this.destroyed) {
-            this.cameraInstance.stop();
+startCamera() {
+    const startPromise = cameraController.start(this.videoRef, this.cameraSettings);
+    this.$emit('init', startPromise);
+    startPromise.then((capabilities) => {
+          if (this.isMounted) {
+            this.cameraActive = true;
+            console.log("capabilities", capabilities)
+          } else {
+            cameraController.stop();
           }
+        })
+        .catch((error) => {
+          this.$emit('error', error);
+        });
+    },
 
-          return {
-            capabilities
-          };
-        }
-      })();
+    stopCamera() {
+      const canvas = this.pauseFrameRef;
+      const ctx = canvas.getContext('2d');
+      const video = this.videoRef;
 
-      this.$emit("init", promise);
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+
+      ctx.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
+
+      cameraController.stop();
+      this.cameraActive = false;
+      this.$emit('camera-off');
     },
 
     startScanning() {
+      console.log("startScanning")
       const detectHandler = result => {
         this.onDetect(Promise.resolve(result));
       };
@@ -172,13 +161,6 @@ export default {
         locateHandler: this.onLocate,
         minDelay: this.scanInterval
       });
-    },
-
-    beforeResetCamera() {
-      if (this.cameraInstance !== null) {
-        this.cameraInstance.stop();
-        this.cameraInstance = null;
-      }
     },
 
     onLocate(detectedCodes) {
@@ -272,7 +254,7 @@ export default {
     },
 
     clearCanvas(canvas) {
-      const ctx = canvas.getContext("2d");
+      const ctx = canvas.getContext('2d');
       ctx.clearRect(0, 0, canvas.width, canvas.height);
     }
 
