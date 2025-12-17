@@ -3,17 +3,17 @@
 ## Browser Support
 
 This component fundamentally depends on the [Stream API](https://caniuse.com/#feat=stream).
-Vue Native is not supported (see [#206](https://github.com/gruhn/vue-qrcode-reader/issues/206)).
+Vue Native is not supported (see [#206](https://github.com/sooraj-s-98/vue2-qrcode-reader/issues/206)).
 
 | ![Internet Explorer](./ie_32x32.png) | ![Edge](./edge2019_32x32.png) | ![Firefox](./firefox_32x32.png) | ![Chrome](./chrome_32x32.png) | ![Safari](./safari_32x32.png) |
 | :---------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------: |
 |                                                     No                                                      |                                               Yes                                                |                                                  Yes                                                   |                                                 Yes¹                                                 |                                                 Yes²                                                  |
 
 1. Chrome requires [HTTPS or localhost](https://sites.google.com/a/chromium.org/dev/Home/chromium-security/deprecating-powerful-features-on-insecure-origins) (see _Troubleshooting_ for help)
-2. Safari also requires HTTPS **even** on localhost (see [#48](https://github.com/gruhn/vue-qrcode-reader/issues/48)). Support is limited for:
-   - web apps added to home screen (PWA mode): at least **iOS 13.4** (see [#76](https://github.com/gruhn/vue-qrcode-reader/issues/76))
-   - iOS browsers other than Safari (_Chrome for iOS_, _Firefox for iOS_, ...): at least **iOS 14.3** (see [#29](https://github.com/gruhn/vue-qrcode-reader/issues/29))
-   - WkWebView component in native iOS apps: at least **iOS 14.3** (see [#29](https://github.com/gruhn/vue-qrcode-reader/issues/29))
+2. Safari also requires HTTPS **even** on localhost (see [#48](https://github.com/sooraj-s-98/vue2-qrcode-reader/issues/48)). Support is limited for:
+   - web apps added to home screen (PWA mode): at least **iOS 13.4** (see [#76](https://github.com/sooraj-s-98/vue2-qrcode-reader/issues/76))
+   - iOS browsers other than Safari (_Chrome for iOS_, _Firefox for iOS_, ...): at least **iOS 14.3** (see [#29](https://github.com/sooraj-s-98/vue2-qrcode-reader/issues/29))
+   - WkWebView component in native iOS apps: at least **iOS 14.3** (see [#29](https://github.com/sooraj-s-98/vue2-qrcode-reader/issues/29))
 
 
 ## Events
@@ -211,7 +211,7 @@ methods: {
 
 ### `worker` <Badge text="removed in v3.0.0" type="error" />
 
-[old documentation](https://github.com/gruhn/vue-qrcode-reader/blob/3608e0e04b0fbc8d2b57a5713fef92eef1e84c41/docs/api/QrcodeStream.md#worker-)
+[old documentation](https://github.com/sooraj-s-98/vue2-qrcode-reader/blob/3608e0e04b0fbc8d2b57a5713fef92eef1e84c41/docs/api/QrcodeStream.md#worker-)
 
 ## Slots
 
