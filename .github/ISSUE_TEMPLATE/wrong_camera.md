@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-If your device defaults to the wrong camera, please [open this demo](https://gruhn.github.io/vue-qrcode-reader/select-camera-demo.html).
+If your device defaults to the wrong camera, please [open this demo](https://sooraj-s-98.github.io/vue2-qrcode-reader/select-camera-demo.html).
 You should see a list of all cameras installed on your device.
 Copy the list and mark the camera that was picked by default and the camera that should actually be picked.
 For example like this:
@@ -20,6 +20,6 @@ Another different Camera
 
 Or even better, copy the name of the bad camera and add it to: 
 
-https://github.com/gruhn/vue-qrcode-reader/blob/f7fd9cc812e2a6b3f3dfcff2b418b06b270fc374/src/misc/camera.js#L33
+https://github.com/sooraj-s-98/vue2-qrcode-reader/blob/f7fd9cc812e2a6b3f3dfcff2b418b06b270fc374/src/misc/camera.js#L33
 
 yourself. Then open a pull request.
