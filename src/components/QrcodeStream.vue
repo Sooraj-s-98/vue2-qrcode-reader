@@ -79,6 +79,17 @@ export default {
 
     shouldScan() {
       return this.cameraSettings.shouldStream && this.cameraActive;
+    },
+      /**
+     * Minimum delay in milliseconds between frames to be scanned. Don't scan
+     * so often when visual tracking is disabled to improve performance.
+     */
+     scanInterval() {
+      if (this.track === undefined) {
+        return 500;
+      } else {
+        return 40; // ~ 25fps
+      }
     }
   },
 
