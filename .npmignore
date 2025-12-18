@@ -1,0 +1,16 @@
+node_modules
+dist/demo
+demo
+examples
+tests
+coverage
+.vscode
+.idea
+.github
+*.log
+*.map
+*.ts
+*.vue
+src/
+public/
+docs/
